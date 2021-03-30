@@ -2,6 +2,11 @@ import React from 'react';
 
 import { formatCurrencyNotCipher } from '../../Utils/formatCurrency';
 
+
+import { 
+    FiAlertCircle 
+} from 'react-icons/fi';
+
 import { 
     Container, 
     Type,
@@ -42,7 +47,7 @@ const RendaListCard: React.FC<snapshotProduct> = ({data, isPar}) => {
     return (
         <Container isPar={isPar}>
             <Type>
-                <Title isPar={isPar}>Titulo </Title>
+                <Title isPar={isPar}> Titulo <FiAlertCircle size={13}/> </Title>
                 <Description>
                     <h5>{data.fixedIncome.name} </h5>
                     <p>
@@ -55,7 +60,7 @@ const RendaListCard: React.FC<snapshotProduct> = ({data, isPar}) => {
                 </Description>
             </Type>
             <Values>
-                <Title isPar={isPar}>Minha posição </Title>
+                <Title isPar={isPar}>Minha posição <FiAlertCircle size={13}/></Title>
                 <Description>
                     <p>
                         VALOR INVES.
@@ -102,7 +107,7 @@ const RendaListCard: React.FC<snapshotProduct> = ({data, isPar}) => {
                 </Description>
             </Values>
             <ShelfLife>
-                <Title isPar={isPar}>VENCIMENTO </Title>
+                <Title isPar={isPar}>VENCIMENTO <FiAlertCircle size={13}/></Title>
                 <Description>
                     <p>
                         DATA VENC. 

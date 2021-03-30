@@ -42,21 +42,26 @@ export const ShelfLife = styled.div`
 `;
 
 
-export const Title = styled.h4<IContainer>`
+export const Title = styled.div<IContainer>`
+    display: flex;
+    justify-content: space-between; 
+
     position: absolute;
     z-index: 1;
     
     font: 500 .8rem 'Montserrat';
     color: ${props => props.theme.colors.textColor}; 
 
-    padding: 0rem 3rem .4rem .4rem;
+    padding: .2rem 0rem .2rem .4rem;
    
     box-sizing: border-box;
     border-radius: .5rem .5rem 0px 0px;
     border: 1.5px solid ${props => props.theme.colors.borderColor};
  
     border-bottom: 2px solid ${props => props.isPar ? props.theme.colors.balck : props.theme.colors.graySecundary};
-    
+    svg{
+        margin: 0 .8rem 0 1rem;
+    }
 `;
 
 export const Description = styled.div`
